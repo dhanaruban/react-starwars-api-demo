@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-import {GET_PEOPLE, GET_PLANETS, GET_STARSHIPS} from './action-creators';
+import { GET_PEOPLE, GET_PLANETS, GET_STARSHIPS } from './action-creators';
 
 const _App = ({ loading, list, getPeople, getPlanets, getStarships }) => {
   const [ filterText, setFilterText ] = useState('');
