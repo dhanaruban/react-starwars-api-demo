@@ -30,7 +30,7 @@ const _App = ({ loading, list, getPeople, getPlanets, getStarships }) => {
       { !loading &&
         <ul className="spacing">
           { filteredList.map(item =>
-            <li>{ item.name }</li>
+            <li key={item.name}>{ item.name }</li>
           )}
         </ul>
       }
