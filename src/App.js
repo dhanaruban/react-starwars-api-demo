@@ -41,15 +41,15 @@ const _App = ({ loading, list, getPeople, getPlanets, getStarships }) => {
 const mapStateToProps = state => {
   return {
     loading: state.loading,
-    list: state.list || []
+    list: state.list
   }
 };
 
 const mapDispatchToProps = {
-    getPeople: GET_PEOPLE,
-    getPlanets: GET_PLANETS,
-    getStarships: GET_STARSHIPS
-  }
+  getPeople: GET_PEOPLE,
+  getPlanets: GET_PLANETS,
+  getStarships: GET_STARSHIPS
+};
 
 export { _App };
 
