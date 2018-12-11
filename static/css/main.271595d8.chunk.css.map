@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/jpodwys/code/react-starwars-api-demo/src/App.css"],"names":[],"mappings":"AAAA,QACE,oBAAsB,CACvB,AACD,SACE,eAAgB,AAChB,QAAU,CACX","file":"main.271595d8.chunk.css","sourcesContent":[".inline {\n  display: inline-block;\n}\n.spacing {\n  padding: 10px 0;\n  margin: 0;\n}\n"]}
