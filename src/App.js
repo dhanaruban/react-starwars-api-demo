@@ -24,7 +24,7 @@ const _App = ({ loading, list, getPeople, getPlanets, getStarships }) => {
       </div>
 
       { loading &&
-        <div className="spacing" v-if="loading">Loading...</div>
+        <div className="spacing">Loading...</div>
       }
 
       { !loading &&
