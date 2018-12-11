@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
+import {GET_PEOPLE, GET_PLANETS, GET_STARSHIPS} from './action-creators';
 
 const _App = ({ loading, list, getPeople, getPlanets, getStarships }) => {
   const [ filterText, setFilterText ] = useState('');
@@ -44,13 +45,11 @@ const mapStateToProps = state => {
   }
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    getPeople: () => dispatch({ type: 'GET_PEOPLE' }),
-    getPlanets: () => dispatch({ type: 'GET_PLANETS' }),
-    getStarships: () => dispatch({ type: 'GET_STARSHIPS' })
+const mapDispatchToProps = {
+    getPeople: GET_PEOPLE,
+    getPlanets: GET_PLANETS,
+    getStarships: GET_STARSHIPS
   }
-};
 
 export { _App };
 
